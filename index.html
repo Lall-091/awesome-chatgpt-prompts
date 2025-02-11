@@ -21,7 +21,7 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"This repo includes ChatGPT prompt curation to use ChatGPT better.","headline":"Awesome ChatGPT Prompts","name":"Awesome ChatGPT Prompts","url":"/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=3a1d66c8ca083ca340df11ed4c46e765181c50ae">
+    <link rel="stylesheet" href="/assets/css/style.css?v=94deb7a76c84283f6382cd8ee2793d8ad52a0fb8">
     <style>
       :root {
         --bg-color-light: #ffffff;
@@ -1361,6 +1361,59 @@
           font-size: 0.9rem;
         }
       }
+
+      /* Variable Input Field Styles */
+      .variable-container {
+        margin-bottom: 24px;
+        padding: 16px;
+        background: rgba(16, 185, 129, 0.05);
+        border-radius: 8px;
+        border: 1px solid var(--accent-color);
+      }
+
+      .variable-form {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      }
+
+      .variable-input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .variable-input-wrapper label {
+        font-size: 0.8rem;
+        color: var(--accent-color);
+        font-weight: 500;
+      }
+
+      .variable-input {
+        padding: 8px;
+        border: 1px solid #e1e4e8;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        background: var(--bg-color-light);
+        color: var(--text-color-light);
+        transition: all 0.2s ease;
+      }
+
+      .dark-mode .variable-input {
+        background: var(--bg-color-dark);
+        color: var(--text-color-dark);
+        border-color: #2d2d2d;
+      }
+
+      .variable-input:focus {
+        outline: none;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.1);
+      }
+
+      .modal-content {
+        /* white-space: pre-wrap; */
+      }
     </style>
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
@@ -1447,7 +1500,7 @@
         </div>
         <div class="main-content">
           <div class="container-lg markdown-body">
-      <p align="center">
+            <p align="center">
 <img width="395" alt="prompts.chat" src="https://github.com/user-attachments/assets/e0d0e32d-d2ce-4459-9f37-e951d9f4f5de" />
 </p>
 
@@ -1590,7 +1643,7 @@ Frontend Developer, Full Stack Developer, iOS Developer etc.</p>
 
 <blockquote>
   <p>I want you to act as an interviewer. I will be the candidate and you will ask
-me the interview questions for the <code class="language-plaintext highlighter-rouge">position</code> position. I want you to only
+me the interview questions for the ${Position:JavaScript Developer} position. I want you to only
 reply as the interviewer. Do not write all the conversation at once. I want
 you to only do the interview with me. Ask me the questions and wait for my
 answers. Do not write explanations. Ask me the questions one by one like an
@@ -1677,20 +1730,17 @@ must be able to process nonverbal information, such as the emotional state of
 the speaker.”</p>
 </blockquote>
 
-<h2 id="act-as-character-from-moviebookanything">Act as ‘Character’ from ‘Movie/Book/Anything’</h2>
+<h2 id="act-as-character">Act as Character</h2>
 
 <p>Contributed by: <a href="https://github.com/BRTZL">@BRTZL</a>
 <a href="https://github.com/mattsq">@mattsq</a></p>
 
-<p><strong>Examples</strong>: Character: Harry Potter, Series: Harry Potter Series, Character:
-Darth Vader, Series: Star Wars etc.</p>
-
 <blockquote>
-  <p>I want you to act like {character} from {series}. I want you to respond and
-answer like {character} using the tone, manner and vocabulary {character}
-would use. Do not write any explanations. Only answer like {character}. You
-must know all of the knowledge of {character}. My first sentence is “Hi
-{character}.”</p>
+  <p>I want you to act like ${Character: Anakin Skywalker} from ${Series: Star Wars}. I want you to respond and
+answer like ${Character: Anakin Skywalker} using the tone, manner and vocabulary ${Character: Anakin Skywalker}
+would use. Do not write any explanations. Only answer like ${Character: Anakin Skywalker}. You
+must know all of the knowledge of ${Character: Anakin Skywalker}. My first sentence is “Hi
+${Character: Anakin Skywalker}.”</p>
 </blockquote>
 
 <h2 id="act-as-an-advertiser">Act as an Advertiser</h2>
@@ -4538,6 +4588,20 @@ challenges to resolve complex issues and scaling the application with zero
 issues and high performance of application in low or no network as well.</p>
 </blockquote>
 
+<h2 id="act-as-devops-engineer">Act as Devops Engineer</h2>
+
+<p>Contributed by: <a href="https://github.com/tscburak">@tscburak</a></p>
+
+<blockquote>
+  <p>You are a ${Title:Senior} DevOps engineer working at 
+${Company Type: Big Company}. Your role is to provide scalable, efficient, and 
+automated solutions for software deployment, infrastructure management, and CI/CD 
+pipelines. First problem is: ${Problem: Creating an MVP quickly for an 
+e-commerce web app}, suggest the best DevOps practices, including 
+infrastructure setup, deployment strategies, automation tools, and cost-effective 
+scaling solutions.</p>
+</blockquote>
+
 <h2 id="contributors-">Contributors 😍</h2>
 
 <p>Many thanks to these AI whisperers:</p>
@@ -4552,10 +4616,10 @@ issues and high performance of application in low or no network as well.</p>
 
 
       
-      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+            <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
         Awesome ChatGPT Prompts is open source. <a href="https://github.com/Lall-091/awesome-chatgpt-prompts/edit/gh-pages/README.md">Improve this page</a>.
-      </div>
-      
+            </div>
+            
           </div>
         </div>
       </div>
