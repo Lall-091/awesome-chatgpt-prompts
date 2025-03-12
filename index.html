@@ -21,7 +21,7 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"This repo includes ChatGPT prompt curation to use ChatGPT better.","headline":"Awesome ChatGPT Prompts","name":"Awesome ChatGPT Prompts","url":"/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=24e7dc56037301a91cbc25bcec52e386bf915465">
+    <link rel="stylesheet" href="/assets/css/style.css?v=7c65334f534942a277b6615a8b5dbed4f6f41adb">
     <style>
       :root {
         --bg-color-light: #ffffff;
@@ -1839,6 +1839,43 @@
       .dark-mode .grok-mode-option:hover {
         background: rgba(16, 185, 129, 0.2);
       }
+
+      .cursor-logo {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--accent-color);
+        opacity: 0.8;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        font-size: 0.85rem;
+        margin-right: 8px;
+      }
+
+      .cursor-logo:hover {
+        opacity: 1;
+        transform: translateY(-1px);
+      }
+
+      .cursor-logo svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* Style for the Cursor AI logo paths in dark mode */
+      .cursor-logo path[fill="#fff"] {
+        transition: fill 0.2s ease;
+      }
+      
+      .dark-mode .cursor-logo path[fill="#fff"] {
+        fill: #2d2d2d;
+      }
+
+      @media (max-width: 768px) {
+        .cursor-logo span {
+          display: none;
+        }
+      }
     </style>
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
@@ -1899,6 +1936,16 @@
           </div>
         </div>
         <div class="header-right">
+          <a href="https://cursor.com" target="_blank" class="cursor-logo" title="Built with Cursor AI">
+            <svg height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.925 24l10.425-6-10.425-6L1.5 18l10.425 6z" fill="#10b981" class="cursor-logo-path dark-mode-path"></path>
+              <path d="M22.35 18V6L11.925 0v12l10.425 6z" fill="#10b981" class="cursor-logo-path dark-mode-path"></path>
+              <path d="M11.925 0L1.5 6v12l10.425-6V0z" fill="#10b981" class="cursor-logo-path dark-mode-path"></path>
+              <path d="M22.35 6L11.925 24V12L22.35 6z" fill="#fff" class="cursor-logo-path dark-mode-path"></path>
+              <path d="M22.35 6l-10.425 6L1.5 6h20.85z" fill="#fff" class="cursor-logo-path dark-mode-path"></path>
+            </svg>
+            <span>Built with Cursor AI</span>
+          </a>
           <a href="https://github.com/f/awesome-chatgpt-prompts/stargazers" target="_blank" class="star-count">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
@@ -5178,6 +5225,23 @@ scaling solutions.</p>
         const grokOptions = document.querySelectorAll('.grok-mode-option');
         let isGrokDropdownVisible = false;
 
+        // Add event listeners for all platform buttons
+        const platformButtons = document.querySelectorAll('.platform-tag');
+        platformButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const platform = button.getAttribute('data-platform');
+            // If platform is not github-copilot, set audience to "everyone"
+            if (platform !== 'github-copilot') {
+              audienceSelect.value = 'everyone';
+              document.body.classList.remove('dev-mode');
+              // Trigger filtering if needed
+              if (typeof filterPrompts === 'function') {
+                filterPrompts();
+              }
+            }
+          });
+        });
+
         // Hide dropdown when clicking outside
         document.addEventListener('click', (e) => {
           if (!e.target.closest('.platform-tag-container')) {
@@ -5202,6 +5266,14 @@ scaling solutions.</p>
             grokButton.textContent = selectedText;
             grokDropdown.style.display = 'none';
             isGrokDropdownVisible = false;
+            
+            // Also set audience to "everyone" for Grok options
+            audienceSelect.value = 'everyone';
+            document.body.classList.remove('dev-mode');
+            // Trigger filtering if needed
+            if (typeof filterPrompts === 'function') {
+              filterPrompts();
+            }
           });
         });
       });
