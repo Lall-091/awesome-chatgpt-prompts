@@ -21,13 +21,15 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"This repo includes ChatGPT prompt curation to use ChatGPT better.","headline":"Awesome ChatGPT Prompts","name":"Awesome ChatGPT Prompts","url":"/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=7c65334f534942a277b6615a8b5dbed4f6f41adb">
+    <link rel="stylesheet" href="/assets/css/style.css?v=38133d474775e4475604ab8e380857b94efbd654">
     <style>
       :root {
         --bg-color-light: #ffffff;
         --bg-color-dark: #1a1a1a;
         --text-color-light: #000000;
         --text-color-dark: #ffffff;
+        --header-height: 145px;
+        --footer-height: 145px;
         --sidebar-width: 300px;
         --accent-color: #10b981;
         --accent-color-hover: #059669;
@@ -38,6 +40,7 @@
         color: var(--text-color-light);
         margin: 0;
         padding: 0;
+        overflow-y: hidden;
       }
 
       body.dark-mode {
@@ -79,6 +82,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: var(--header-height);
       }
 
       .dark-mode .site-header {
@@ -156,6 +160,7 @@
         left: 0;
         right: 0;
         z-index: 100;
+        height: var(--footer-height);
       }
 
       .dark-mode .site-footer {
@@ -511,7 +516,7 @@
         width: var(--sidebar-width);
         padding: 20px;
         border-right: 1px solid #e1e4e8;
-        height: calc(100vh - 140px);
+        height: calc(100vh - var(--header-height) - var(--footer-height));
         overflow-y: auto;
         background-color: var(--bg-color-light);
       }
@@ -519,16 +524,21 @@
       .dark-mode .sidebar {
         background-color: var(--bg-color-dark);
         border-right-color: #2d2d2d;
+        scrollbar-color: #2d2d2d transparent;
       }
 
       .main-content {
         flex: 1;
-        height: calc(100vh - 140px);
+        height: calc(100vh - var(--header-height) - var(--footer-height));
         overflow-y: auto;
         padding: 20px;
         padding-top: 0;
         position: relative;
       }
+
+      .dark-mode .main-content {
+         scrollbar-color: #2d2d2d transparent;
+       }
 
       .main-content-header {
         position: sticky;
