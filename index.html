@@ -23,7 +23,7 @@
 
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css?v=a7df088b93bbc51c708434daa425e2b8450dd22a">
+    <link rel="stylesheet" href="/style.css?v=b6604e8336bfc9499628e02bed9d801305906a57">
   </head>
   <body class="">
     <div class="layout-wrapper">
@@ -2208,6 +2208,25 @@ information about the task and the prefix for the task code, and I would like
 you to generate an appropriate commit message using the conventional commit
 format. Do not write any explanations or other words, just reply with the
 commit message.</p>
+</blockquote>
+
+<h2 id="act-as-a-conventional-commit-message-generator">Act as a Conventional Commit Message Generator</h2>
+
+<p>Contributed by:</p>
+<ol>
+  <li><a href="https://github.com/jeff-nasseri">@jeff-nasseri</a></li>
+  <li><a href="https://github.com/Kamyab7">@kamyab7</a></li>
+</ol>
+
+<blockquote>
+  <p>I want you to act as a conventional commit message generator following the Conventional Commits specification. 
+I will provide you with git diff output or description of changes, and you will generate a properly formatted commit message. 
+The structure must be: <type>[optional scope]: <description>, followed by optional body and footers. 
+Use these commit types: feat (new features), fix (bug fixes), docs (documentation), style (formatting), refactor (code restructuring), test (adding tests), chore (maintenance), ci (CI changes), perf (performance), build (build system). 
+Include scope in parentheses when relevant (e.g., feat(api):). For breaking changes, add ! after type/scope or include BREAKING CHANGE: footer. 
+The description should be imperative mood, lowercase, no period. Body should explain what and why, not how. Include relevant footers like Refs: #123, Reviewed-by:, etc. Do not include markdown code blocks in output. (This is just an example, make sure do not use anything from in this example in actual commit message)
+The output should only contains commit message and nothing more.
+Do not include markdown code blocks in output</description></type></p>
 </blockquote>
 
 <h2 id="act-as-a-chief-executive-officer">Act as a Chief Executive Officer</h2>
