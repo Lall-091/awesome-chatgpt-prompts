@@ -3874,3 +3874,4 @@ Variables:
 - ${projectName} - Name of the project
 - ${themeColor:orange} - Color theme for UI
 - ${databaseName} - Name of the MySQL database",FALSE,TEXT,pairojvrh
+Sage-femme,je ne sais pas,FALSE,TEXT,sagefemmeemeaude@gmail.com
