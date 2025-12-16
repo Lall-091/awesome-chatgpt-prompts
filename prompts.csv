@@ -4130,3 +4130,109 @@ Wenn es für die Aufgabe sinnvoll ist: verwende digitale Medien zur Lösung des 
 Halte dich dabei an die Kriterien in der angefügten Datei. Es müssen nicht immer alle Kriterien erfüllt sein. Der Fokus sollte vor allem darauf liegen ein alltagsnahes Problem möglichst eigenaktiv lösen zu können.
 
 Begründe am Ende für die Lehrkraft, welche Kriterien für kognitiv aktivierende Aufgaben erfüllt wurden.",FALSE,TEXT,loomiteee
+玄学,"import streamlit as st
+import random
+import time
+
+# --- 页面配置 (赛博风格) ---
+st.set_page_config(page_title=""比特卦 | BitGua"", page_icon=""☯️"", layout=""centered"")
+
+# 自定义 CSS 让界面看起来更 Cyberpunk
+st.markdown(""""""
+<style>
+    .stApp {
+        background-color: #0e1117;
+        color: #00ff41;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .big-font {
+        font-size: 30px !important;
+        font-weight: bold;
+        color: #00ff41;
+        text-shadow: 0 0 10px #00ff41;
+    }
+    .result-box {
+        border: 2px solid #ff00ff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #ff00ff;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .stButton>button {
+        color: #ffffff;
+        background-color: #2b2b2b;
+        border: 1px solid #00ff41;
+    }
+</style>
+"""""", unsafe_allow_html=True)
+
+# --- 核心逻辑 ---
+
+def binary_decision():
+    """""" 简单的做与不做 """"""
+    time.sleep(1.5) # 模拟计算过程
+    return random.choice([""执行 (EXECUTE)"", ""终止 (ABORT)""])
+
+def cyber_iching():
+    """""" 简易版赛博易经 """"""
+    hexagrams = {
+        ""乾"": {""name"": ""乾为天"", ""code"": ""111111"", ""desc"": ""潜龙勿用 -> 飞龙在天。能量极强，此时应顺势而为，大胆行动。""},
+        ""坤"": {""name"": ""坤为地"", ""code"": ""000000"", ""desc"": ""厚德载物。现在不是进攻的时候，而是积累资源、寻找盟友的时刻。""},
+        ""屯"": {""name"": ""水雷屯"", ""code"": ""010001"", ""desc"": ""万事开头难。系统正在初始化，Bug 较多，需耐心调试，切勿急躁。""},
+        ""未济"": {""name"": ""火水未济"", ""code"": ""101010"", ""desc"": ""任务未完成。当前状态不稳定，不要急于交付，仍需迭代。""},
+        ""既济"": {""name"": ""水火既济"", ""code"": ""010101"", ""desc"": ""完美状态。项目已上线，但需防备随后的熵增（混乱），守成不易。""},
+        ""大有"": {""name"": ""火天大有"", ""code"": ""111101"", ""desc"": ""资源充足。资金流健康，可以考虑扩张或投资。""},
+        ""坎"": {""name"": ""坎为水"", ""code"": ""010010"", ""desc"": ""陷入死循环。环境险恶，风险极高，建议暂停操作，检查止损点。""},
+        ""离"": {""name"": ""离为火"", ""code"": ""101101"", ""desc"": ""光明依附。寻找大佬或强力依赖库，不要单打独斗。""}
+    }
+    # 模拟随机获取一个卦象
+    key = random.choice(list(hexagrams.keys()))
+    time.sleep(2)
+    return hexagrams[key]
+
+# --- 界面布局 ---
+
+st.markdown('<p class=""big-font"">☯️ 比特卦 | CYBER-DIVINER v1.0</p>', unsafe_allow_html=True)
+st.write("">> 正在连接宇宙全息投影..."")
+st.write("">> 请输入你的决策请求，算法将为你坍缩由于性。"")
+
+user_input = st.text_input(""请输入困扰你的事情 (Input Query):"", placeholder=""例如：今天要不要加仓？"")
+
+tab1, tab2 = st.tabs([""⚡ 二进制决断"", ""🔮 赛博签文""])
+
+with tab1:
+    st.write(""适用于：Yes/No，做/不做，去/不去"")
+    if st.button(""启动量子随机数生成器 (RNG)""):
+        if not user_input:
+            st.warning(""⚠️ 警告：输入为空，杂念太重。"")
+        else:
+            with st.spinner('正在计算概率波函数...'):
+                result = binary_decision()
+                st.markdown(f""""""
+                <div class=""result-box"">
+                    <h2>{result}</h2>
+                    <p>决策建议已生成</p>
+                </div>
+                """""", unsafe_allow_html=True)
+
+with tab2:
+    st.write(""适用于：寻找方向，模糊指引"")
+    if st.button(""接入易经数据库 (I-Ching DB)""):
+        if not user_input:
+            st.warning(""⚠️ 警告：请输入具体事项以锁定因果。"")
+        else:
+            with st.spinner('正在解析卦象数据流...'):
+                gua = cyber_iching()
+                st.markdown(f""""""
+                <div class=""result-box"">
+                    <h2 style='color:cyan'>{gua['name']}</h2>
+                    <p style='font-family: monospace'>{gua['code']}</p>
+                    <hr style='border-color: #ff00ff'>
+                    <p style='font-size: 18px'>{gua['desc']}</p>
+                </div>
+                """""", unsafe_allow_html=True)
+
+st.markdown(""---"")
+st.caption(""Powered by Python & Cosmic Entropy. 仅供娱乐参考，命运掌握在自己手中。"")
+",FALSE,TEXT,pangxx966@gmail.com
