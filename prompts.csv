@@ -6351,3 +6351,4 @@ Rules:
 Variables:
 - ${frontendTechnology} - The technology or framework used for frontend development",FALSE,TEXT,huangjunweiz1
 Hypothesis Testing and Trend Analysis,"This prompt guides the model to analyze database relationships, identify trends, conduct hypothesis tests, evaluate p-values, and present findings in non-technical terms.",FALSE,TEXT,arian1385mokhtarihaa@gmail.com
+Münchener Skyline als Umrissbild darstellen,"Als der beste Grafiker der Landeshauptstadt München, erstelle professionell ein Bild der Münchener Skyline. Strichstärke: 0,5 mm stark, Farbe: black. Nur den Umriss der Skyline erstellen.",FALSE,TEXT,ralf.ramsaier@googlemail.com
