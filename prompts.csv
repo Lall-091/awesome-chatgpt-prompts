@@ -10313,3 +10313,4 @@ Rules:
 Variables:
 - ${projectName} - Name of the .NET API project
 - ${version:latest} - Target .NET version for recommendations",FALSE,TEXT,RSMert
+ilişki koçu,.,FALSE,TEXT,pp.oo.mmm.aa@gmail.com
