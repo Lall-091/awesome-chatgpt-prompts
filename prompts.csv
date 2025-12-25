@@ -11013,3 +11013,128 @@ Protocol 2084: The Alleyway Hack,"{
     }
   }
 }",FALSE,STRUCTURED,ersinkoc
+"Build a simple, modern web application called **Course Enrollment Portal** using Python, Flask, HTMX, and SQLite.","# Project Goal
+
+Build a simple, modern web application called **Course Enrollment Portal** using Python, Flask, HTMX, and SQLite.
+
+**Features:**
+- Display a list of available courses (title, description, instructor, duration).
+- Allow users to select a course and submit a request/enrollment form (name, email, phone, message/motivation).
+- After submission, show a success message and list all enrollment requests (admin view-like, simple for demo).
+- Use HTMX for dynamic interactions: partial page updates, no full reloads, smooth UX without any custom JavaScript.
+- Style the app nicely using Tailwind CSS (via CDN for simplicity).
+- Store data in SQLite via Flask-SQLAlchemy.
+
+**User Flow:**
+1. Home page: Shows list of courses in a grid/cards.
+2. User clicks ""Enroll"" on a course → HTMX loads the enrollment form (pre-filled with selected course).
+3. User fills and submits form → HTMX submits, shows success message, and optionally updates a requests list.
+
+# Tech Stack Requirements
+- **Dependency Management**: Use **Poetry** exclusively (no pip or virtualenv directly).
+- **Framework**: **Flask** (latest compatible version).
+- **Database**: **Flask-SQLAlchemy** with SQLite backend.
+- **Frontend Interactivity**: **HTMX** (via CDN) for dynamic updates.
+- **Styling**: Tailwind CSS (via CDN).
+- Optional: Use `flask-htmx` extension for easier partial detection if helpful.
+- Python version: Target Python 3.13+ (current as of late 2025).
+
+# Best Practices to Follow
+- Use application factory pattern in `__init__.py`.
+- Organize with Blueprints if needed (at least one for main views).
+- Separate templates into base.html + partials (for HTMX).
+- Validate form inputs (server-side).
+- Handle errors gracefully (flash messages).
+- Seed the database with 5-10 sample courses on first run.
+- Project structure inspired by Poetry defaults + Flask recommendations.
+
+# Recommended Project Structure
+├── pyproject.toml
+├── README.md
+├── build_environment.md          # For tracking task progress
+├── src/
+│   └── course_portal/
+│       ├── init.py          # App factory, db init
+│       ├── models.py            # SQLAlchemy models (Course, EnrollmentRequest)
+│       ├── routes.py            # Or blueprints/views
+│       ├── forms.py             # Optional WTForms if needed, else manual validation
+│       ├── templates/
+│       │   ├── base.html
+│       │   ├── index.html
+│       │   ├── partials/
+│       │   │   ├── course_list.html
+│       │   │   ├── enrollment_form.html
+│       │   │   └── requests_list.html
+│       └── static/                  # If needed for custom CSS/JS (minimal)
+├── tests/                           # Add basic tests later
+└── instance/                        # SQLite db will be here
+
+# Step-by-Step Tasks
+Create a file `build_environment.md` at the project root to track progress with checklists.
+
+- [ ] **Initialize Project**
+  - Run `poetry new course-enrollment-portal --src` (uses src layout).
+  - cd into the project.
+  - Add dependencies: `poetry add flask flask-sqlalchemy`
+  - Add HTMX/Tailwind via CDN in templates (no need to add as deps).
+  - Optional: `poetry add flask-htmx`
+
+- [ ] **Set Up Flask App**
+  - Create application factory in `src/course_portal/__init__.py`.
+  - Configure SQLite db (`instance/course_portal.sqlite`).
+  - Initialize db in a command or on first run.
+
+- [ ] **Define Models**
+  - In `models.py`: Course (id, title, description, instructor, duration).
+  - EnrollmentRequest (id, course_id FK, name, email, phone, message, timestamp).
+
+- [ ] **Create Database Seed**
+  - Add a function/script to populate 5-10 sample courses if db empty.
+
+- [ ] **Build Templates**
+  - `base.html`: Include Tailwind CDN, HTMX CDN, basic layout (header, main container).
+  - `index.html`: Extend base, include course list partial.
+  - Partials for HTMX swaps: course cards, form, success message.
+
+- [ ] **Implement Routes**
+  - `/`: GET - Render full page with course list.
+  - `/courses`: GET - Return partial course list (for HTMX refresh if needed).
+  - `/enroll/<course_id>`: GET - Return partial enrollment form.
+  - `/enroll`: POST - Validate, save request, return success partial + updated requests list.
+  - `/requests`: GET - Return partial list of all enrollment requests.
+
+- [ ] **Add HTMX Interactions**
+  - Course cards: hx-get to load form into a div.
+  - Form: hx-post, hx-target to update a result div with success or errors.
+  - Use hx-swap=""innerHTML"" or ""outerHTML"" as needed.
+
+- [ ] **Add Validation & Feedback**
+  - Server-side check for required fields, valid email.
+  - Use Flask flash or return error partials.
+
+- [ ] **Run & Test**
+  - Add script in pyproject.toml: `poetry run flask --app src/course_portal run --debug`
+  - Or use `flask run` with FLASK_APP set.
+  - Manually test all flows.
+  - Ensure db seeds on first run.
+
+- [ ] **Final Polish**
+  - Add README with setup/run instructions.
+  - Basic error handling (404, 500).
+  - Make it responsive with Tailwind.
+
+# Progress Tracking
+- After completing each major task above, update `build_environment.md` with:
+  - [x] Task description
+  - Notes on what was implemented.
+- Once all tasks are done, mark the project as complete.
+
+# General Guidelines
+1. Always provide clean, commented code.
+2. If unclear on any feature, suggest a simple implementation.
+3. Output code changes file-by-file with full paths.
+4. Do not use any custom JavaScript.
+5. Prioritize simplicity and functionality over perfection.
+6. After each step, confirm it works before proceeding.
+
+Follow these instructions to build a fully functional, interactive web app!",FALSE,TEXT,bugyboo
