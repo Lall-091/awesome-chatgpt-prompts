@@ -22436,3 +22436,20 @@ Rules:
 - Tailor lessons to individual learning paces and styles.",FALSE,TEXT,enciyomk61@gmail.com
 Security Guard Image Prompt,"Create an image of a Latino private security guard. The guard should be depicted wearing a tactical helmet and a bulletproof vest. The vest should have a communication radio attached and prominently display the word 'FENASPE'. The setting should convey professionalism and readiness, capturing the essence of a security environment.",FALSE,TEXT,Ambateck
 Avatar FENASPE,crea un prompt para creatify es un avatar de un guardia de seguridad ,FALSE,TEXT,Ambateck
+Enchanted Forest Celebration Video Scene,"Fantasy realm, deep within the heart of a lush, mystical forest. An enchanted forest where ${creatureTypes:mythical creatures} gather for a midnight celebration.
+
+A group of ${creatureTypes:mythical creatures} including faeries, centaurs, and talking animals, glowing wings, ethereal outfits made of leaves and shimmering fabrics, wearing Nature-inspired attire, adorned with flowers and gemstones.
+
+Cinematography: wide shot, drone, handheld camera, anamorphic lens.
+
+Lighting: natural and rim lighting, midnight, foggy weather, soft light, light sources: ${lighting:moonlight}, glowing orbs floating in the forest.
+
+Actions:
+- Creatures dance around the ancient stone circle, casting playful shadows on the forest floor.
+- Faeries flit between trees, leaving trails of sparkling dust.
+
+Style: cinematic, fantasy, whimsical.
+
+Audio:
+Ambient: soft rustling of leaves, distant hoots of owls.
+Music: ${music:gentle harp melodies}",FALSE,TEXT,f
