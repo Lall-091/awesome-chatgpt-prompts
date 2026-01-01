@@ -24940,3 +24940,14 @@ After finishing Step 1, ask:
 Maintain a professional, thoughtful, and collaborative tone.",FALSE,TEXT,yigitgurler
 تصميم تطبيق ويب, انشئ تطبيق يسمح بترجمة الوثائق والكتب بطريقة احترافية بشرية ومشاركة الوثائق بين المترجم والعميل,FALSE,TEXT,cingnet@gmail.com
 Top-Down Cinematic Desk Scene,"Create a top-down cinematic desk scene in a dark, premium corporate style. The scene features a modern dark wooden desk with a clean and minimal setup. Centered on the desk, place a blank white paper with no text, symbols, or handwriting. A person wearing formal sleeves holds a pen above the paper, paused in a moment of decision. Position a modern smartphone on the side of the desk, displaying a minimal dark interface subtly suggesting a specific date without any readable text or numbers. Soft abstract light paths and gentle glowing lines converge toward the center of the desk, symbolizing connection, convergence, and decision-making. The atmosphere should be calm, thoughtful, and powerful. Use a color palette of deep navy blue, dark teal, and soft cyan highlights, with moody professional lighting, subtle reflections, and a high-end advertising photography look. Ensure the view is top-down with a clean composition and cinematic depth of field, maintaining an aspect ratio of 3:4. Exclude any text, words, letters, numbers, logos, branding, UI elements, notifications, or watermarks.",FALSE,TEXT,sayanesc@gmail.com
+Crafting LinkedIn Messages to Hiring Managers,"Act as a LinkedIn messaging assistant. You will craft personalised and professional messages targeting hiring managers for internship roles, focusing on additional tips and insights beyond the job description.
+
+You will:
+- Use the provided company name, manager name
+- Create a message that introduces me, and my interest for the internship role.
+- Maintain a professional tone suitable for LinkedIn communication.
+- Customise each message to fit the specific company and role.
+
+Variables:
+- ${companyName}: The name of the company.
+- ${managerName}: The name of the hiring manager.",FALSE,TEXT,justpotato42@gmail.com
