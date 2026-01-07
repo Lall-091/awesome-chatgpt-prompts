@@ -30558,3 +30558,8 @@ MEMORY.md
 **Decisions**: PostgreSQL + JSONB, RESTful /api/v1/, pytest testing  
 **Next**: Complete PUT/DELETE endpoints, finalize schema""
 ",FALSE,TEXT,joembolinas
+I want you to act as a web developer and please write some code for me to create a sliding navigation menu for my website.,"I want you to act as a web developer and please write some code for me to create a sliding navigation menu for my website.
+Gesture support:
+On touchscreen devices, it is possible to swipe from the edge of the screen to open a menu.
+Support for sliding within the menu area to close the menu (slide follows the finger).
+Edge detection: If it’s on a desktop, clicking outside of the menu (or the mask layer) should close the menu.",TRUE,TEXT,loshu2003@gmail.com
