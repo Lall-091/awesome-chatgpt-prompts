@@ -30573,3 +30573,7 @@ Icons must rotate 180 degrees along with the state of the panel (e.g., an arrow 
 I want you to act as a web developer and please write some code for me to create a fixed header for the website.,"I want you to act as a web developer and please write some code for me to create a fixed header for the website.
 The initial state background is semi-transparent or solid color.
 When a user scrolls down the page (not just when the mouse cursor hovers), a subtle bottom shadow (box-shadow) should be added to the header to enhance visual hierarchy and distinguish it from the content area.",TRUE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me that will allow users to zoom in and out of images on a website.,"I want you to act as a web developer and please write some code for me that will allow users to zoom in and out of images on a website.
+When a user moves the mouse cursor into the image container, the image should be enlarged around the current mouse position (similar to a simplified version of the “zoom” effect, where the entire image is scaled up).
+The mouse cursor smoothly returns to its original state when it is moved out of the area.
+Key Points: When zooming in, the image should not extend beyond the boundaries of the container, and the mouse pointer should always remain in the corresponding position within the zoomed-in area (i.e., the zoom center point follows the mouse).",TRUE,TEXT,loshu2003@gmail.com
