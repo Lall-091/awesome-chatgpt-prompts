@@ -30214,3 +30214,8 @@ Displays the progress of buffering (the percentage of loading, usually shown in 
 Volume control:
 Tap the mute button. The icon will change to indicate that it is muted, and the volume slider will be set to zero.
 Display the volume slider when hovering over or focusing on the screen.",FALSE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me to create a picture carousel for the website.,"I want you to act as a web developer and please write some code for me to create a picture carousel for the website.
+Automatic playback:
+The carousel will automatically start after the components have been loaded, with an interval of 3 seconds.
+When a user hovers their mouse over the carousel image, automatic playback is paused; playback resumes once the mouse is moved away.
+If a user manually clicks the navigation button, the automatic playback timer should be reset.",FALSE,TEXT,loshu2003@gmail.com
