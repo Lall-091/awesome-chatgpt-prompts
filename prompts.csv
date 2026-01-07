@@ -30195,3 +30195,7 @@ I want you to play the role of a web developer and write code for a website load
 Design Style:
 Minimalist: Do not use outdated GIF images; it must be implemented using pure CSS or SVG.
 Brand Identity: The animation colors should match the website's primary color scheme",TRUE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me to create a pop-up notification feature for the website.,"I want you to act as a web developer and please write some code for me to create a pop-up notification feature for the website.
+Entrance animation: When the notification appears, there should be an animation effect of sliding in from the right or fading in.
+Opening Animation: When closed, there should be a smooth fade-out or slide-out animation; do not abruptly disappear.
+Progress Indicator: A small progress bar is displayed at the bottom or top of the notification, providing an intuitive countdown until it automatically disappears.",FALSE,TEXT,loshu2003@gmail.com
