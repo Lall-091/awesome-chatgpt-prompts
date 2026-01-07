@@ -30219,3 +30219,9 @@ Automatic playback:
 The carousel will automatically start after the components have been loaded, with an interval of 3 seconds.
 When a user hovers their mouse over the carousel image, automatic playback is paused; playback resumes once the mouse is moved away.
 If a user manually clicks the navigation button, the automatic playback timer should be reset.",FALSE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me to create a form validation feature for a website.,"I want you to act as a web developer and please write some code for me to create a form validation feature for a website.
+Format validation:
+Email address: Must conform to the standard email format (including @ and a domain name).
+Phone number: Perform regular expression matching based on the target region (e.g., Chinese phone number).
+Password: Strength check (e.g., at least 8 characters, including both uppercase and lowercase letters, as well as numbers).
+Confirm password: Must be exactly the same as the “Password” field.",TRUE,TEXT,loshu2003@gmail.com
