@@ -30570,3 +30570,6 @@ The currently displayed panel should have visual emphasis (such as a highlighted
 Icon indications:
 There is a small icon next to the title (usually a downward/upward arrow or a plus/minus sign).
 Icons must rotate 180 degrees along with the state of the panel (e.g., an arrow pointing downward indicates that it is expanded, while an arrow pointing right indicates that it is collapsed).",TRUE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me to create a fixed header for the website.,"I want you to act as a web developer and please write some code for me to create a fixed header for the website.
+The initial state background is semi-transparent or solid color.
+When a user scrolls down the page (not just when the mouse cursor hovers), a subtle bottom shadow (box-shadow) should be added to the header to enhance visual hierarchy and distinguish it from the content area.",TRUE,TEXT,loshu2003@gmail.com
