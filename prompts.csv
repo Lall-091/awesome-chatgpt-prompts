@@ -30205,3 +30205,12 @@ The design features rounded corners, with both ends forming semi-circles (border
 The progress bar fill area should have a gradient background to add a modern touch.
 Dynamic animation:
 When the progress value changes, the width’s variation must be a smooth transition animation (using transition: width 0.3s ease), rather than a sudden jump.",FALSE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me to create a responsive video player for a website.,"I want you to act as a web developer and please write some code for me to create a responsive video player for a website.
+Play/Pause: The button icon must switch dynamically based on the state (display “Pause” icon while playing, “Play” icon while paused).
+Progress bar:
+Displays the current playback time / total duration.
+The progress bar supports clicking to navigate (Seek).
+Displays the progress of buffering (the percentage of loading, usually shown in a lighter color against the progress bar background).
+Volume control:
+Tap the mute button. The icon will change to indicate that it is muted, and the volume slider will be set to zero.
+Display the volume slider when hovering over or focusing on the screen.",FALSE,TEXT,loshu2003@gmail.com
