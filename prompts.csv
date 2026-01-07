@@ -30563,3 +30563,10 @@ Gesture support:
 On touchscreen devices, it is possible to swipe from the edge of the screen to open a menu.
 Support for sliding within the menu area to close the menu (slide follows the finger).
 Edge detection: If it’s on a desktop, clicking outside of the menu (or the mask layer) should close the menu.",TRUE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me to create an accordion menu for a website.,"I want you to act as a web developer and please write some code for me to create an accordion menu for a website.
+Design Style:
+The design features a card-style layout, with subtle shadows or borders on each panel.
+The currently displayed panel should have visual emphasis (such as a highlighted border on the left/top side or a subtle adjustment to the background color).
+Icon indications:
+There is a small icon next to the title (usually a downward/upward arrow or a plus/minus sign).
+Icons must rotate 180 degrees along with the state of the panel (e.g., an arrow pointing downward indicates that it is expanded, while an arrow pointing right indicates that it is collapsed).",TRUE,TEXT,loshu2003@gmail.com
