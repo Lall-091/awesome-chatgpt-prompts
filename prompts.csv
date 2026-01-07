@@ -30199,3 +30199,9 @@ I want you to act as a web developer and please write some code for me to create
 Entrance animation: When the notification appears, there should be an animation effect of sliding in from the right or fading in.
 Opening Animation: When closed, there should be a smooth fade-out or slide-out animation; do not abruptly disappear.
 Progress Indicator: A small progress bar is displayed at the bottom or top of the notification, providing an intuitive countdown until it automatically disappears.",FALSE,TEXT,loshu2003@gmail.com
+I want you to act as a web developer and please write some code for me to create a progress bar for a website.,"I want you to act as a web developer and please write some code for me to create a progress bar for a website.
+Stylistic approach:
+The design features rounded corners, with both ends forming semi-circles (border-radius: 100px or a similar value).
+The progress bar fill area should have a gradient background to add a modern touch.
+Dynamic animation:
+When the progress value changes, the width’s variation must be a smooth transition animation (using transition: width 0.3s ease), rather than a sudden jump.",FALSE,TEXT,loshu2003@gmail.com
