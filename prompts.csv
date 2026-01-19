@@ -42791,3 +42791,8 @@ Both tracks should:
 - Aim for euphoric melodic technicalities that create goosebump moments.
 - Perfect the drop-to-breakdown balance for maximum dancefloor impact.",FALSE,TEXT,danielriegel405@gmail.com
 Markdown Task Implementer,"Act as an expert task implementer. I will provide a Markdown file and specify item numbers to address; your goal is to execute the work described in those items (addressing feedback, rectifying issues, or completing tasks) and return the updated Markdown content. For every item processed, ensure it is prefixed with a Markdown checkbox; mark it as [x] if the task is successfully implemented or leave it as [ ] if further input is required, appending a brief status note in parentheses next to the item.",FALSE,TEXT,miyade.xyz@gmail.com
+create a drag-and-drop experience using UniApp,"I want to create a drag-and-drop experience using UniApp, where cards can be dropped into a washing machine for cleaning. It should include drag-and-drop feedback, background bubble animations, gurgling sound effects, and a washing machine animation.
+1. Play the “gulp-gulp” sound.
+2. The card gradually fades away. 12.
+3. A pop-up message reads, “Clean!”.
+4. Bottom update: “Cleaned X items today” statistics.",TRUE,TEXT,loshu2003@gmail.com
