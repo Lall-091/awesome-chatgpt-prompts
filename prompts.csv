@@ -48380,3 +48380,12 @@ Valorant Agent Style,"{ ""TASK"": ""Design a unique 'Valorant' Agent Key Art. Ri
 ""AGENT"": ""Athletic, confident. Future-tech streetwear (straps, windbreaker, tactical gloves). Sharp facial planes. Hair: Thick, sculpted chunks (no strands)."",""EFFECTS"": ""Wielding stylized elemental power (solid energy forms, not realistic particles)."", ""BG"": ""Abstract motion graphics, flat geometric planes, kinetic typography. Red/Dark contrast slicing the frame."",
 ""LIGHT"": ""Strong rim lighting, hard-edge cast shadows."", ""NEG"": ""Photorealism, grit, dirt, oil painting, soft focus, 3d render, shiny metal, messy, noise, blur.""
 }//You can add Name and Skills or size like 16:9 here.",FALSE,TEXT,22abdullahok22@gmail.com
+Rick And Morty,"{
+  ""TASK"": ""Reimagine the scene as a 'Rick and Morty' TV show screenshot."",
+  ""VISUAL_ID"": ""2D Vector Animation, Adult Swim Style (Justin Roiland). Flat colors, uniform thin black outlines."",
+  ""CHARACTERS"": ""Convert humans to 'Rick and Morty' anatomy. Tubular/noodle limbs, droopy stance. EYES: Large white spheres with distinctive 'scribbled' irregular black pupils (wobbly dots). EXPRESSIONS: Apathetic, panicked, or drooling."",
+  ""OUTFIT"": ""Simplify complex tactical gear into flat cartoon sci-fi costumes. Remove texture noise; keep only iconic shapes."",
+  ""BG"": ""Alien dimension or messy garage. Wobbly organic lines, weird sci-fi textures (holes, slime). Palette: Neon portal green, muted earth tones, pale skin tones."",
+  ""RENDER"": ""Zero gradients. Flat lighting. No shadows or minimal hard cel-shading. Clean vector look."",
+  ""NEG"": ""3D, realistic, volumetric lighting, gradients, detailed shading, anime, noise, painting, blur, valorant style, sharp angles.""
+}",FALSE,STRUCTURED,22abdullahok22@gmail.com
