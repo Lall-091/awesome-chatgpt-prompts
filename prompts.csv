@@ -53872,3 +53872,32 @@ You have access to a structured dataset with 5,010 prompt-response pairs designe
 - `Prompt_Type`: Type of prompt (e.g., Question, Command, Open-ended).  
 - `Prompt_Length`: Character length of the prompt.  
 - `Response`: AI-generated response.",FALSE,TEXT,m727ichael@gmail.com
+5x2 Reverse Construction Process - Villa Demolition Storyboard,"Create a 5x2 storyboard depicting the reverse construction process of a modern villa. Each frame is vertical with a 9:16 aspect ratio, arranged in 2 rows and 5 columns, resulting in a total storyboard aspect ratio of 45:32. The sequence progresses from left-to-right, top-to-bottom.
+
+FRAME SEQUENCE:
+
+[Row 1, Col 1] Frame 1: Showcase the complete villa with ALL elements intact - indoor furniture, curtains, potted plants, rugs, artwork, outdoor loungers, umbrella, manicured lawn, flowers in bloom, glass curtain wall, and a finished facade. Snow-capped mountain and century-old trees in the background, unchanged.
+
+[Row 1, Col 2] Frame 2: REMOVE ALL FF&E (Fixed Furniture, Fixtures & Equipment) - all furniture, curtains, potted plants, rugs, and artwork are GONE. Rooms appear empty, though floors, walls, and ceilings are still finished with tiles/wood/paint. The terrace is bare stone, and flower beds are now just empty soil.
+
+[Row 1, Col 3] Frame 3: REMOVE ALL interior finishes - floor tiles/wood, wall paint/plaster, suspended ceiling tiles, light fixtures, switches, and sockets GONE. Rooms display raw concrete floors and rough wall substrates, with open concrete soffits visible overhead.
+
+[Row 1, Col 4] Frame 4: REMOVE the entire glass envelope - ALL glass panels, window frames, door frames, exterior cladding panels, insulation layers GONE. The building is fully open, revealing internal steel and concrete columns and beams directly against the lawn.
+
+[Row 1, Col 5] Frame 5: REMOVE non-structural masonry - ALL interior partition walls, exterior infill walls, parapets, dry-lining, and cladding attachments GONE. ONLY the primary structural skeleton remains: bare upright concrete columns, steel beams, and floor slabs forming an empty grid frame.
+
+[Row 2, Col 1] Frame 6: REMOVE structural frame via collapse - the upright columns, beams, and floor slabs COLLAPSE to the ground, forming a scattered rubble pile of concrete chunks, twisted rebar, and broken steel sections. The concrete foundation is partially visible through the debris. The upright framework is GONE.
+
+[Row 2, Col 2] Frame 7: REMOVE ALL debris and waste - ALL concrete chunks, rebar, steel sections, and waste material are CLEARED. The lawn is debris-free. The entire concrete foundation is fully exposed as a clean, intact rectangular block sitting on the ground.
+
+[Row 2, Col 3] Frame 8: REMOVE concrete Foundation - the entire foundation slab is DEMOLISHED and COMPLETELY REMOVED. An empty excavated pit remains, showing compacted soil or bedrock at the bottom. No concrete remains in the frame.
+
+[Row 2, Col 4] Frame 9: REMOVE artificial landscape elements - terrace paving stones, concrete driveway slab, manicured lawn grass, and cultivated soil ALL REMOVED. The excavated pit is filled back to its original grade. The site becomes a flat field of natural, uncultivated soil and earth.
+
+[Row 2, Col 5] Frame 10: RESTORE ground to natural state - the flat soil transforms into rugged, uneven terrain with exposed rocks, dirt patches, and scattered dry weeds. The ground appears untamed and messy. The snow-capped mountain and century-old trees remain IDENTICAL in position, shape, and foliage color (still green and healthy). Bright natural daylight persists.
+
+CRITICAL CONSTRAINTS:
+1. SUBTRACTION LOGIC: Frames 1-9 can ONLY REMOVE elements present in the previous frame. NO additions or new objects are allowed. Each frame is strictly derived by subtracting from the prior frame.
+2. PERMANENT VISUAL ANCHORS: The mountain silhouette and the two century-old trees must maintain IDENTICAL position, size, shape, and foliage color (绿色健康) in ALL FRAMES. These elements serve as reference points to ensure visual continuity.
+3. LIGHTING CONSISTENCY: All frames must use bright, natural daylight. No dark, gloomy, or stormy lighting, especially in the final frame.
+4. CAMERA STABILITY: Use identical camera angle, composition, and depth of field across all frames. The viewing perspective must be locked to maintain coherence.",FALSE,TEXT,zhaitongbao@gmail.com
